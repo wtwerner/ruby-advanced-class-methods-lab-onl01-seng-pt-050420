@@ -46,7 +46,7 @@ class Song
   end
   
   def self.new_from_filename(file_name)
-    song_data = file_name.sub!(/.mp3/,-,'')
+    song_data = file_name.sub!(/.mp3/\W/)
     song = self.new
     song.name = song_data[1]
     song.artist_name = song_data[0]
