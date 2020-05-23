@@ -49,7 +49,7 @@ class Song
     song_data = file_name.sub!(/.mp3/,'')
     song = self.new
     song.name = song_data[0]
-    song.artist_name = song_data[]
+    song.artist_name = song_data[1]
   end
   
 end
