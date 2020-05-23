@@ -48,6 +48,8 @@ class Song
   def self.new_from_filename(file_name)
     song_data = file_name.sub!(/.mp3/,'')
     song = self.new
+    song.name = song_data[0]
+    song.artist_name = song_data[]
   end
   
 end
