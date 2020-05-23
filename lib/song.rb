@@ -21,4 +21,5 @@ class Song
     song.save
     @name = name
     song
+  end
 end
